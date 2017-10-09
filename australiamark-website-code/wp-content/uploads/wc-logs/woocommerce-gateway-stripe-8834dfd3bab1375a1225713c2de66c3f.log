@@ -1,0 +1,1028 @@
+09-02-2017 @ 20:45:00 - Your domain has been verified with Apple Pay!
+09-02-2017 @ 20:52:30 - customers request: Array
+(
+    [email] => eaglesun1010@gmail.com
+    [description] => Yige Sun
+    [metadata] => Array
+        (
+        )
+
+)
+
+09-02-2017 @ 20:52:31 - customers/cus_BKFcw9k2Xg6ZHk/sources request: Array
+(
+    [source] => tok_1Axb6vCBteRsF94X6thgykUi
+)
+
+09-02-2017 @ 20:52:31 - customers/cus_BKFcw9k2Xg6ZHk request: Array
+(
+    [default_source] => card_1Axb6vCBteRsF94XUnbW1URv
+)
+
+09-02-2017 @ 20:52:32 - Info: Begin processing payment for order 655 for the amount of 888.00
+09-02-2017 @ 20:52:32 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 88800
+    [description] => AUSTRALIA MARK - Order 655
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => eaglesun@outlook.com
+        )
+
+    [customer] => cus_BKFcw9k2Xg6ZHk
+    [source] => card_1Axb6vCBteRsF94XUnbW1URv
+)
+
+09-02-2017 @ 20:52:32 - Processing response: stdClass Object
+(
+    [id] => ch_1Axb6yCBteRsF94XO0QZZKoL
+    [object] => charge
+    [amount] => 88800
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1Axb6yCBteRsF94XcaKJ2War
+            [object] => balance_transaction
+            [amount] => 88800
+            [available_on] => 1504915200
+            [created] => 1504356752
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 655
+            [fee] => 2605
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 237
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 2368
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 86195
+            [source] => ch_1Axb6yCBteRsF94XO0QZZKoL
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1Axb6yCBteRsF94XO0QZZKoL
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504356752
+    [currency] => aud
+    [customer] => cus_BKFcw9k2Xg6ZHk
+    [description] => AUSTRALIA MARK - Order 655
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => eaglesun@outlook.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Axb6yCBteRsF94XO0QZZKoL/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1Axb6vCBteRsF94XUnbW1URv
+            [object] => card
+            [address_city] => Kensington
+            [address_country] => AU
+            [address_line1] => 22 Liddy St
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => VIC
+            [address_zip] => 3000
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => cus_BKFcw9k2Xg6ZHk
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 9
+            [exp_year] => 2019
+            [fingerprint] => mzoN3crJQVVgnHOb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Yige Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-02-2017 @ 20:52:33 - Success: Stripe charge complete (Charge ID: ch_1Axb6yCBteRsF94XO0QZZKoL)
+09-02-2017 @ 21:07:40 - Info: Beginning refund for order 655 for the amount of 888.00
+09-02-2017 @ 21:07:40 - charges/ch_1Axb6yCBteRsF94XO0QZZKoL/refunds request: Array
+(
+    [amount] => 88800
+)
+
+09-02-2017 @ 21:07:40 - Success: Refunded $888.00 - Refund ID: re_1AxbLcCBteRsF94XNWrRwNGY - Reason: 
+09-02-2017 @ 21:13:38 - customers/cus_BKFcw9k2Xg6ZHk/sources request: Array
+(
+    [limit] => 100
+)
+
+09-02-2017 @ 21:13:47 - Info: Begin processing payment for order 663 for the amount of 888.00
+09-02-2017 @ 21:13:47 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 88800
+    [description] => AUSTRALIA MARK - Order 663
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => kangdil0817@gmail.com
+        )
+
+    [customer] => cus_BKFcw9k2Xg6ZHk
+    [source] => card_1Axb6vCBteRsF94XUnbW1URv
+)
+
+09-02-2017 @ 21:13:48 - Processing response: stdClass Object
+(
+    [id] => ch_1AxbRYCBteRsF94XiChOADCm
+    [object] => charge
+    [amount] => 88800
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1AxbRYCBteRsF94Xz1erJ0vG
+            [object] => balance_transaction
+            [amount] => 88800
+            [available_on] => 1504915200
+            [created] => 1504358028
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 663
+            [fee] => 2605
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 237
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 2368
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 86195
+            [source] => ch_1AxbRYCBteRsF94XiChOADCm
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1AxbRYCBteRsF94XiChOADCm
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504358028
+    [currency] => aud
+    [customer] => cus_BKFcw9k2Xg6ZHk
+    [description] => AUSTRALIA MARK - Order 663
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => kangdil0817@gmail.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1AxbRYCBteRsF94XiChOADCm/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1Axb6vCBteRsF94XUnbW1URv
+            [object] => card
+            [address_city] => Kensington
+            [address_country] => AU
+            [address_line1] => 22 Liddy St
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => VIC
+            [address_zip] => 3000
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => cus_BKFcw9k2Xg6ZHk
+            [cvc_check] => 
+            [dynamic_last4] => 
+            [exp_month] => 9
+            [exp_year] => 2019
+            [fingerprint] => mzoN3crJQVVgnHOb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Yige Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-02-2017 @ 21:13:49 - Success: Stripe charge complete (Charge ID: ch_1AxbRYCBteRsF94XiChOADCm)
+09-02-2017 @ 21:43:13 - customers request: Array
+(
+    [email] => qmjsh@163.com
+    [description] => Gary Sun
+    [metadata] => Array
+        (
+        )
+
+)
+
+09-02-2017 @ 21:43:13 - customers/cus_BKGQ9O6yB8LdoM/sources request: Array
+(
+    [source] => tok_1Axbu0CBteRsF94XLzxQwPo1
+)
+
+09-02-2017 @ 21:43:14 - customers/cus_BKGQ9O6yB8LdoM request: Array
+(
+    [default_source] => card_1Axbu0CBteRsF94XmekNsIfQ
+)
+
+09-02-2017 @ 21:43:14 - Info: Begin processing payment for order 667 for the amount of 888.00
+09-02-2017 @ 21:43:14 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 88800
+    [description] => AUSTRALIA MARK - Order 667
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Gary Sun
+            [Customer Email] => qmjsh@163.com
+        )
+
+    [customer] => cus_BKGQ9O6yB8LdoM
+    [source] => card_1Axbu0CBteRsF94XmekNsIfQ
+)
+
+09-02-2017 @ 21:43:15 - Processing response: stdClass Object
+(
+    [id] => ch_1Axbu3CBteRsF94XFMAR2L2V
+    [object] => charge
+    [amount] => 88800
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1Axbu3CBteRsF94XTWJRYWZJ
+            [object] => balance_transaction
+            [amount] => 88800
+            [available_on] => 1504915200
+            [created] => 1504359795
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 667
+            [fee] => 2605
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 2368
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 237
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                )
+
+            [net] => 86195
+            [source] => ch_1Axbu3CBteRsF94XFMAR2L2V
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1Axbu3CBteRsF94XFMAR2L2V
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504359795
+    [currency] => aud
+    [customer] => cus_BKGQ9O6yB8LdoM
+    [description] => AUSTRALIA MARK - Order 667
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Gary Sun
+            [Customer Email] => qmjsh@163.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Axbu3CBteRsF94XFMAR2L2V/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1Axbu0CBteRsF94XmekNsIfQ
+            [object] => card
+            [address_city] => Melbourne
+            [address_country] => AU
+            [address_line1] => 220 London St
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => QLD
+            [address_zip] => 1233
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => cus_BKGQ9O6yB8LdoM
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 1
+            [exp_year] => 2043
+            [fingerprint] => mzoN3crJQVVgnHOb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Gary Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-02-2017 @ 21:43:15 - Success: Stripe charge complete (Charge ID: ch_1Axbu3CBteRsF94XFMAR2L2V)
+09-04-2017 @ 23:44:24 - Info: Begin processing payment for order 682 for the amount of 8888.00
+09-04-2017 @ 23:44:24 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 888800
+    [description] => AUSTRALIA MARK - Order 682
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [source] => tok_1AyKsGCBteRsF94XSjnrSrGl
+)
+
+09-04-2017 @ 23:44:25 - Processing response: stdClass Object
+(
+    [id] => ch_1AyKsHCBteRsF94XVmTQ2nFa
+    [object] => charge
+    [amount] => 888800
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1AyKsHCBteRsF94XFFk9QodH
+            [object] => balance_transaction
+            [amount] => 888800
+            [available_on] => 1505088000
+            [created] => 1504532665
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 682
+            [fee] => 25805
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 23459
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 2346
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                )
+
+            [net] => 862995
+            [source] => ch_1AyKsHCBteRsF94XVmTQ2nFa
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1AyKsHCBteRsF94XVmTQ2nFa
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504532665
+    [currency] => aud
+    [customer] => 
+    [description] => AUSTRALIA MARK - Order 682
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1AyKsHCBteRsF94XVmTQ2nFa/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1AyKsFCBteRsF94XBpwHIe9f
+            [object] => card
+            [address_city] => sdfsdf
+            [address_country] => AU
+            [address_line1] => 2131 sdfsdf dt
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => NSW
+            [address_zip] => 1232
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 8
+            [exp_year] => 2018
+            [fingerprint] => mzoN3crJQVVgnHOb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Yige Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-04-2017 @ 23:44:25 - Success: Stripe charge complete (Charge ID: ch_1AyKsHCBteRsF94XVmTQ2nFa)
+09-04-2017 @ 23:50:36 - Info: Begin processing payment for order 685 for the amount of 888.00
+09-04-2017 @ 23:50:36 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 88800
+    [description] => AUSTRALIA MARK - Order 685
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [source] => tok_1AyKyFJUlyVS93kG7QdLs3Iy
+)
+
+09-04-2017 @ 23:50:36 - Processing response: stdClass Object
+(
+    [id] => ch_1AyKyGJUlyVS93kG9fjORb7w
+    [object] => charge
+    [amount] => 88800
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1AyKyGJUlyVS93kGcoGVxgwB
+            [object] => balance_transaction
+            [amount] => 88800
+            [available_on] => 1505088000
+            [created] => 1504533036
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 685
+            [fee] => 2605
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 2368
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 237
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                )
+
+            [net] => 86195
+            [source] => ch_1AyKyGJUlyVS93kG9fjORb7w
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1AyKyGJUlyVS93kG9fjORb7w
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504533036
+    [currency] => aud
+    [customer] => 
+    [description] => AUSTRALIA MARK - Order 685
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1AyKyGJUlyVS93kG9fjORb7w/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1AyKyFJUlyVS93kGfQ071DGh
+            [object] => card
+            [address_city] => sdfsdf
+            [address_country] => AU
+            [address_line1] => 2131 sdfsdf dt
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => NSW
+            [address_zip] => 1232
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2019
+            [fingerprint] => 4Unh88ede2LuUNTz
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Yige Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-04-2017 @ 23:50:37 - Success: Stripe charge complete (Charge ID: ch_1AyKyGJUlyVS93kG9fjORb7w)
+09-05-2017 @ 11:28:45 - Info: Begin processing payment for order 688 for the amount of 1.00
+09-05-2017 @ 11:28:45 - charges request: Array
+(
+    [currency] => aud
+    [amount] => 100
+    [description] => AUSTRALIA MARK - Order 688
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [source] => tok_1AyVrsJUlyVS93kGQI25ZKJr
+)
+
+09-05-2017 @ 11:28:47 - Processing response: stdClass Object
+(
+    [id] => ch_1AyVrtJUlyVS93kGti48vKlP
+    [object] => charge
+    [amount] => 100
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1AyVruJUlyVS93kGeAM868lw
+            [object] => balance_transaction
+            [amount] => 100
+            [available_on] => 1505174400
+            [created] => 1504574925
+            [currency] => aud
+            [description] => AUSTRALIA MARK - Order 688
+            [fee] => 32
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 3
+                            [application] => 
+                            [currency] => aud
+                            [description] => GST
+                            [type] => tax
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [amount] => 29
+                            [application] => 
+                            [currency] => aud
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 68
+            [source] => ch_1AyVrtJUlyVS93kGti48vKlP
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1AyVrtJUlyVS93kGti48vKlP
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1504574925
+    [currency] => aud
+    [customer] => 
+    [description] => AUSTRALIA MARK - Order 688
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Yige Sun
+            [Customer Email] => yiges@student.unimelb.edu.au
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1AyVrtJUlyVS93kGti48vKlP/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1AyVrsJUlyVS93kGeI7G9ttR
+            [object] => card
+            [address_city] => sdfsdf
+            [address_country] => AU
+            [address_line1] => 2131 sdfsdf dt
+            [address_line1_check] => unavailable
+            [address_line2] => 
+            [address_state] => NSW
+            [address_zip] => 1232
+            [address_zip_check] => unavailable
+            [brand] => MasterCard
+            [country] => AU
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => YQ1xgUmJXD6Ywjji
+            [funding] => credit
+            [last4] => 9470
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Yige Sun
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+09-05-2017 @ 11:28:47 - Success: Stripe charge complete (Charge ID: ch_1AyVrtJUlyVS93kGti48vKlP)
